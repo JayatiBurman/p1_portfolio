@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Framework Test Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <div class="col-sm-3 col-md-3">
+                <img class="img-responsive title-logo" src="images/udaLogo.jpg" alt="Udacity Logo">
+            </div>
+            <div class="col-sm-9 col-md-9 text-right text-uppercase">
+                <h1 class="text-thin title-super">JANE DOETTE</h1>
+                <h4 class="title-sub">FRONT-END NINJA</h4>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-md-12 rule" />
+        </div>
+        <main>
+            <section class="row">
+                <figure class="col-md-12 big-pic">
+                    <img class="img-responsive" src="images/bigpic.jpg" alt="This is a big picture">
+                </figure>
+            </section>
+            <header class="row">
+                <div class="col-md-12">
+                    <h2 class="text-muted txt-pad">Featured Work</h2>
+                </div>
+            </header>
+            <section class="row">
+                <section class="col-sm-4 col-md-4 text-center img-sec">
+                    <img class="img-responsive center-block" src="images/appify.jpg" alt="This is the Appify image" data-toggle="modal" data-target="#appify">
+                    <h3 class="pic-title">APPIFY</h3>
+                    <a href='https://github.com/udacity/Appify/'>https://github.com/udacity/Appify/</a>
+                </section>
+                <section class="col-sm-4 col-md-4 text-center img-sec">
+                    <img class="img-responsive center-block" src="images/sunflower.jpg" alt="This is the Sunflower image" data-toggle="modal" data-target="#sunflower">
+                    <h3 class="pic-title">SUNFLOWER</h3>
+                    <a href='https://github.com/udacity/Sunflower/'>https://github.com/udacity/Sunflower/</a>
+                </section>
+                <section class="col-sm-4 col-md-4 text-center img-sec">
+                    <img class="img-responsive center-block" src="images/bokeh.jpg" alt="This is the Bokeh image" data-toggle="modal" data-target="#bokeh">
+                    <h3 class="pic-title">BOKEH</h3>
+                    <a href='https://github.com/udacity/Bokeh/'>https://github.com/udacity/Bokeh/</a>
+                </section>
+            </section>
+        </main>
+        <!-- Modal -->
+        <div class="modal fade" id="appify" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center" id="myModalLabel">Appify</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img class="img-responsive center-block" src="images/appify.jpg">
+                        <a href='https://github.com/udacity/Appify/'>https://github.com/udacity/Appify/</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="sunflower" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center" id="myModalLabel">Sunflower</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img class="img-responsive center-block" src="images/sunflower.jpg">
+                        <a href='https://github.com/udacity/Sunflower/'>https://github.com/udacity/Sunflower/</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="bokeh" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center" id="myModalLabel">Bokeh</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img class="img-responsive center-block" src="images/bokeh.jpg">
+                        <a href='https://github.com/udacity/Bokeh/'>https://github.com/udacity/Bokeh/</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
