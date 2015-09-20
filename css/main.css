@@ -10,96 +10,36 @@
         font-weight: 300;
     }
 
-    /* Media Queries */
-    
-    @media only screen and (max-width: 350px) {
-        body {
-            font-size: .80em !important;
-        }
-        .title-logo {
-            max-width: 100% !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-        .title-super {
-            width: 100% !important;
-            text-align: center !important;
-        }
-        .title-sub {
-            width: 100% !important;
-            text-align: center !important;
-        }
+    nav li{
+        display: inline-block;
+        border-left: 1px solid #666;
+        border-right: 1px solid #666;
     }
-    
-    @media only screen and (min-width: 331px) and (max-width: 500px) {
-        body {
-            font-size: .90em !important;
-        }
-        .title-logo {
-            max-width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .title-super {
-            width: 100%;
-            text-align: center;
-        }
-        .title-sub {
-            width: 100%;
-            text-align: center;
-        }
+
+    nav li:first-child,nav li:last-child{
+        border: none;
     }
-    
-    @media only screen and (min-width: 501px) and (max-width: 767px) {
-        body {
-            font-size: .95em !important;
-        }
+
+    nav a{
+        text-transform: uppercase;
+        padding: 0 10px;
+        display: block;
+        color: #f8981c !important;
     }
-    
-    .title-logo {
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+
+    nav ul {
+        padding: 10px 20px 0;
     }
-    
-    .title-super {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .title-sub {
-        width: 100%;
-        text-align: center;
-    }
-    
-    @media only screen and (min-width: 768px) {
-        body {
-            font-size: 1.2em !important;
-        }
-        .title-logo {
-            max-width: 100%;
-            margin-left: 0;
-            margin-right: auto;
-        }
-        .title-super {
-            width: 100%;
-            text-align: right;
-        }
-        .title-sub {
-            width: 100%;
-            text-align: right;
-        }
-    }
+
     /* Alignment Related Style Specification */
-    
-    .rule {
-        height: .3125em;
-        background-color: #BCBBBB;
-        margin: 1em 0;
-    }
     
     .big-pic {
         margin: 1.625em 0;
+    }
+
+    .border {
+        padding-top: 15px;
+        border-top: 5px solid #bcbbbb;
     }
     
     .txt-pad {
@@ -109,11 +49,12 @@
     .img-sec {
         margin-bottom: 1.5em;
     }
+
     /* Text Related Style Specification */
     
     .text-muted,
     a {
-        color: #5D6969;
+        color: #5d6969;
     }
     
     .text-thin {
@@ -141,4 +82,133 @@
     .modal-img {
         width: 100%;
         height: auto;
+    }
+
+    /* Media Queries */
+    
+    @media only screen and (max-width: 350px) {
+    body {
+        font-size: .80em !important;
+    }
+
+    nav {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .title-logo {
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .title-super {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .title-sub {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .text-muted {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    }
+    
+    @media only screen and (min-width: 351px) and (max-width: 500px) {
+    body {
+        font-size: .90em !important;
+    }
+
+    nav {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .title-logo {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title-super {
+        width: 100%;
+        text-align: center;
+    }
+
+    .title-sub {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-muted {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    }
+    
+    @media only screen and (min-width: 501px) and (max-width: 767px) {
+    body {
+        font-size: .95em !important;
+    }
+
+    nav {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .title-logo {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .title-super {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .title-sub {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-muted {
+        font-size: 3.5em;
+        text-align: center;
+    }
+
+    }
+    
+    
+    @media only screen and (min-width: 768px) {
+    body {
+        font-size: 1.2em !important;
+    }
+
+    nav {
+        font-size: 1.5em;
+    }
+
+    .title-logo {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .title-super {
+        width: 100%;
+        text-align: right;
+    }
+
+    .title-sub {
+        width: 100%;
+        text-align: right;
+    }
+
     }
