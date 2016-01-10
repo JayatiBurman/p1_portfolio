@@ -25,9 +25,9 @@
             <div class="clearfix"></div>
             <nav class="row">
                 <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="javascript:void(0)">about</a></li>
-                    <li><a href="javascript:void(0)">contact</a></li>
+                    <li><a href="javascript:redirectLink ()">home</a></li>
+                    <li><a href="javascript:redirectLink ()">about</a></li>
+                    <li><a href="javascript:redirectLink ()">contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -46,17 +46,17 @@
                 <section class="col-sm-4 col-md-4 text-center img-sec">
                     <img class="img-responsive center-block" src="images/appify.JPG" alt="This is the Appify image" data-toggle="modal" data-target="#appify">
                     <h3 class="pic-title">APPIFY</h3>
-                    <p><a href='https://github.com/udacity/Appify/' target="_blank">https://github.com/udacity/Appify/</a></p>
+                    <p><a href='javascript:redirectLink ()' target="_blank">https://github.com/udacity/Appify/</a></p>
                 </section>
                 <section class="col-sm-4 col-md-4 text-center img-sec">
                     <img class="img-responsive center-block" src="images/sunflower.JPG" alt="This is the Sunflower image" data-toggle="modal" data-target="#sunflower">
                     <h3 class="pic-title">SUNFLOWER</h3>
-                    <p><a href='https://github.com/udacity/Sunflower/' target="_blank">https://github.com/udacity/Sunflower/</a></p>
+                    <p><a href='javascript:redirectLink ()' target="_blank">https://github.com/udacity/Sunflower/</a></p>
                 </section>
                 <section class="col-sm-4 col-md-4 text-center img-sec">
                     <img class="img-responsive center-block" src="images/bokeh.JPG" alt="This is the Bokeh image" data-toggle="modal" data-target="#bokeh">
                     <h3 class="pic-title">BOKEH</h3>
-                    <p><a href='https://github.com/udacity/Bokeh/' target="_blank">https://github.com/udacity/Bokeh/</a></p>
+                    <p><a href='javascript:redirectLink ()' target="_blank">https://github.com/udacity/Bokeh/</a></p>
                 </section>
             </section>
         </main>
@@ -69,7 +69,7 @@
                     </div>
                     <div class="modal-body text-center">
                         <img class="img-responsive center-block" src="images/appify.JPG" alt="AppifyImage">
-                        <a href='https://github.com/udacity/Appify/' target="_blank">https://github.com/udacity/Appify/</a>
+                        <a href='javascript:redirectLink ()' target="_blank">https://github.com/udacity/Appify/</a>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -85,7 +85,7 @@
                     </div>
                     <div class="modal-body text-center">
                         <img class="img-responsive center-block" src="images/sunflower.JPG" alt="SunflowerImage">
-                        <a href='https://github.com/udacity/Sunflower/' target="_blank">https://github.com/udacity/Sunflower/</a>
+                        <a href='javascript:redirectLink ()' target="_blank">https://github.com/udacity/Sunflower/</a>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -101,7 +101,7 @@
                     </div>
                     <div class="modal-body text-center">
                         <img class="img-responsive center-block" src="images/bokeh.JPG" alt="BokehImage">
-                        <a href='https://github.com/udacity/Bokeh/' target="_blank">https://github.com/udacity/Bokeh/</a>
+                        <a href='javascript:redirectLink ()' target="_blank">https://github.com/udacity/Bokeh/</a>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -110,6 +110,12 @@
             </div>
         </div>
     </div>
+    <script type='text/javascript'>
+        function redirectLink () {
+            alert('This is just a responsive webpage portfolio mockup. The links won\'t take you anywhere :)' );
+        };
+
+    </script>
 </body>
 
 </html>
